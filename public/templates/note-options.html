@@ -1,0 +1,27 @@
+<!-- &nbsp;<a href='javascript:void(0)' title='print'><i class="icon-print"></i></a> -->
+<% if(shared == 0){ %>
+&nbsp;<a href='#sharingDialog' data-toggle="modal" title='private'><i class="icon-lock"></i></a>
+<% }else if(shared == 1){ %>
+&nbsp;<a href='#sharingDialog' data-toggle="modal" title='public'><i class="icon-globe"></i></a>
+<% } %>
+
+<div id="sharingDialog" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="sharingDialogLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="sharingDialogLabel">Sharing...</h3>
+  </div>
+  <div class="modal-body">
+    <label class="radio">
+	  <input type="radio" name="note-options-radios" value="0" <% shared == 0 ? print('checked') : print('') %>>
+	  Private - Visible to you only
+	</label>
+	<label class="radio">
+	  <input type="radio" name="note-options-radios" value="1" <% shared == 1 ? print('checked') : print('') %>>
+	  Public - Visible to everyone having the link : http://pnned.com/shared/<%=id%>
+	</label>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary"  data-dismiss="modal" id='save-options'>Save</button>
+  </div>
+</div>

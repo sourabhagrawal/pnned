@@ -1,0 +1,1 @@
+ALTER TABLE notes ADD COLUMN `shared` int NOT NULL DEFAULT 0;

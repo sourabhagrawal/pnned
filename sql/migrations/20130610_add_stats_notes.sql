@@ -1,0 +1,1 @@
+ALTER TABLE notes ADD COLUMN `word_count` int NOT NULL DEFAULT 0;

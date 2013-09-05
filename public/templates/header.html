@@ -1,0 +1,35 @@
+<div class='top-bar '>
+	<div class='container-fluid'>
+		<div class='row-fluid'>
+			<div class='span2'>
+				<div class='logo'>
+					<h1 style='color: #eee;'>
+						<a href='/' style='color: #fff; text-decoration: none;'>PNNED!</a>
+					</h1>
+				</div>
+			</div>
+			<div class='span4'>
+				<!-- <ul class="nav nav-pills">
+					<li>
+						<a href='/profile'>Profile Statistics</a>
+					</li>
+					<li>
+						<a href='/faqs'>FAQs</a>
+					</li>
+				</ul> -->
+			</div>
+			<div class='span6' style='text-align:right;'>
+			<% if(isAuth == 1){ %>
+				<h3 style='text-align:right;'><a style='color:#fff;' href='/profile'><%= name%></a> <span style='color:#999;'>|</span> <a href='/logout' style='color:#fff; '>Logout</a></h3>
+			<% }else{ %>
+				<a href="/auth/google">
+					<img src='/images/Red-signin_Long_base_44dp.png' style='height:49px; margin-top: -17px;' />				
+				</a>
+				<a href="/auth/facebook">
+					<img src='/images/FacebookButton.png' style='height: 85px; margin-top : -17px;' />
+				</a>
+			<% } %>
+			</div>
+		</div>
+	</div>
+</div>

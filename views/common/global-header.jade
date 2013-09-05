@@ -1,0 +1,81 @@
+//
+	#fb-root
+	script
+		(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+div(id='login-box-container')
+div(id='forgot-box-container')
+
+-if(locals.isAuthenticated == false)
+	.top-bar
+		.container-fluid
+			.row-fluid
+				.offset9.span3
+					ul.nav.nav-pills
+						li.pull-right
+							a#login-btn(href='#') LOGIN
+						li.pull-right
+							a#signup-btn(href='#') SIGNUP
+	header
+		.container-fluid
+			.row-fluid
+				.span4
+					.logo
+						h1
+							a(href='/') #{domain_name}
+				.span3.offset5
+					.list
+						.email
+							i.icon-envelope-alt
+							| Email: #{support_id}
+	.navbar
+		.navbar-inner
+			.container-fluid
+				a.btn.btn-navbar(data-target='.nav-collapse', data-toggle='collapse') Menu
+				.nav-collapse
+					ul.nav
+						li
+							a(href='/') Home
+						li
+							a(href='#') Features
+						li
+							a(href='/getting-started') Getting Started
+						li
+							a(href='/faqs') Support
+								
+-if(locals.isAuthenticated == true)
+	.top-bar.top-bar-margin
+		.container-fluid
+				.row-fluid
+					.span2
+						.logo
+							h1(style='color: #eee;')
+								a(href='/', style='color: #fff; text-decoration: none;') #{domain_name}
+					.span7
+						ul.nav.nav-pills
+							li
+								a(href='/dashboard') Dashboard
+							li
+								a(href='#') Features
+							li
+								a(href='/getting-started') Getting Started
+							li
+								a#installation-link(href='#installation-modal', data-toggle='modal') Installation
+							li
+								a(href='/faqs') Support
+					.span3
+						ul.nav.nav-pills
+							li.dropdown.pull-right
+								a.dropdown-toggle(data-toggle="dropdown", href="#") #{locals.user.email}
+									b.caret
+								ul.dropdown-menu
+									li
+										a(href='/logout') LOGOUT
+
+

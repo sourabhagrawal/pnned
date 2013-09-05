@@ -1,0 +1,17 @@
+{
+	"domain" : {
+		"host" : "localhost:8000",
+		"name" : "Notes"
+	},
+  	"port" : "8080",
+  	"db" : {
+  		"host" : "localhost",
+  		"user" : "root",
+  		"password" : "",
+  		"database" : "notes"
+  	},
+  	"fb" : {
+  		"clientID" : "316444498488265",
+  		"clientSecret" : "fc1d4e87d70a3dd396bf3bebf6a7aaaf"
+  	}
+}

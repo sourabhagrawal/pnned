@@ -1,0 +1,174 @@
+body{
+	font-size : 16px;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+input[type="text"], input[type="password"]{
+	height:30px;
+}
+
+header{
+	padding-top : 5px;
+}
+
+header .list{
+	top : -5px;
+}
+
+pre{
+	background-color : #fff;
+	border:none;
+	padding:0;
+	word-break: normal;
+	word-wrap: normal;
+}
+
+.margin10{
+	margin-bottom : 10px;
+}
+
+.thumb{
+	padding: 5px;
+	border: 1px solid #EEEEEE;
+}
+
+.top-bar{
+	background:#444; 
+	color:#fff;
+	height : 53px;
+}
+
+.top-bar-margin{
+	margin-bottom : 20px;
+}
+
+.top-bar ul{
+	margin:10px 15px 5px 5px;
+}
+
+[class^="icon-"], [class*=" icon-"]{
+	background:none!important;
+}
+
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+    line-height: 1.3em!important;
+}
+
+li [class^="icon-"], .btn [class*=" icon-"] {
+    line-height: 1.3em!important;
+}
+
+.faq .accordion-heading i{
+	line-height : 29px!important;
+}
+
+.dropdown-toggle {
+    height: 20px;
+}
+
+.nav-pills .dropdown-toggle {
+    height: auto;
+}
+
+.dropdown-menu a {
+    color: #333333;
+}
+
+.nav-pills .dropdown-menu{
+	margin: 2px 0 0;
+}
+
+.table-bordered th, .table-bordered td {
+}
+
+.striped {
+	background:#F9F9F9;
+}
+
+.table-centered th, .table-centered td{
+	text-align:center;
+	vertical-align: middle;
+}
+
+.td-label{
+	text-align:right!important;
+}
+
+.tr-separator{
+	border-top: 3px solid #EEEEEE;
+}
+
+.first-tab{
+	margin-left : 15px;
+}
+
+.code-container{
+	position:absolute; 
+	bottom:0; 
+	left:0; 
+	right:0; 
+	background : none repeat scroll 0 0 #444; 
+	padding : 20px; 
+	z-index : 1000;
+}
+
+.nav-tabs{
+	margin-bottom : 5px;
+}
+
+.trim-accordion{
+	margin : 0!important
+}
+
+.note-text-box{
+	width : 100%; 
+	min-height : 350px; 
+	resize : none;  
+	outline: none; 
+	border: 0; 
+	box-shadow:none !important;
+	font-size : 16px;
+	overflow:hidden;
+}
+
+.note-box{
+	min-height : 350px;
+}
+
+.day-label{
+	margin : 0 2px 0 2px; 
+	padding : 5px; 
+	font-size : 15px;
+}
+
+#days a{
+	text-decoration : none;
+} 
+
+.para{
+	margin:10px 0 20px 0;
+	font-size:16px;
+}
+
+.progress .bar{
+	color : #444;
+}
+
+.progress-happy .bar{
+	background-color: orange;
+}
+
+.progress-sad .bar{
+	background-color: grey;
+}
+
+.progress-anxious .bar{
+	background-color: purple;
+}
+
+.progress-glorious .bar{
+	background-color: purple;
+}
